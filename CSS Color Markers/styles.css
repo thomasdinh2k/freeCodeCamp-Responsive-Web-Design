@@ -1,7 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
 h1 {
-	text-align: center
+	text-align: center;
+	color: black;
 }
 
 .container {
@@ -33,26 +34,28 @@ h1 {
 
 .red {
 	background: linear-gradient(rgb(124,74,14), rgb(245, 62, 113), rgb(162, 27, 27));
-	box-shadow: 0 0 20px 0 rgba(83,14,14, 0.9);
-/*	rgba(83, 14, 14, 0.8)*/
+	box-shadow: 0 0 20px 0 rgba(83,14,14, 0.8);
 }
 .green {
-	background: green;
-	box-shadow: 0 0 20px 0 green;
+	background: linear-gradient(#55680D, #71F53E, #116C31);
+	box-shadow: 0 0 20px 0 #3b7e20cc;
 }
 .yellow {
-	background: yellow;
-	box-shadow: 0 0 20px 0 yellow;
+	background: linear-gradient(#FFD700, #FFFF00, #FFA500);
+	box-shadow: 0 0 20px 0 #FFD700cc;
 }
 
 .black{
-	background: black;
-	
+	background: linear-gradient(#000000, #A9A9A9, #696969);
+	box-shadow: 0 0 20px 0 #2F4F4Fcc;
 }
-.white {
-	background: white;
+.orange {
+	background: linear-gradient(#FFA07A, #FF8C00, #FF4500);
+	box-shadow: 0 0 20px 0 #FFA500cc;
 	
 }
 .pink{
-	background: pink;
+	background: linear-gradient(#FFC0CB, #FF69B4, #FF1493);
+	box-shadow: 0 0 20px #FFB6C1cc;
+	
 }
