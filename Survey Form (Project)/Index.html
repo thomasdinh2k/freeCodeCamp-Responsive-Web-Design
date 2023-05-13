@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>A Survey Form from FreeCodeCamp</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>freeCodeCamp Survey Form</h1>
+    <p>Thank you for taking the time to help us improve the platform</p>
+    <form method="post" action="https://survey-form.freecodecamp.rocks/">
+    <fieldset>
+        <label>Name <input placeholder="Enter your name" required></label>
+        <label>Email <input placeholder="Enter your Email" required></label>
+        <label>Age (optional) <input placeholder="Age"></label>
+        <label>Which option best describe your current role?
+            <select>
+                <option value="">Select current role</option>
+                <option value="">Full Time Job</option>
+                <option value="">Full Time Learner</option>
+                <option value="">Prefer not to say</option>
+                <option value="">Other</option>
+            </select>
+        </label>
+        <label>Would you recommend freeCodeCamp to a friend?</label>
+        <label><input type="radio">Definately</label>
+        <label><input type="radio">Maybe</label>
+        <label><input type="radio">Not sure</label>
+    </fieldset>
+    <fieldset>
+        <label>What is your favourite feature of freeCodeCamp?
+            <select>
+                <option>Select an option</option>
+                <option>Challenges</option>
+                <option>Projects</option>
+                <option>Community</option>
+                <option>Open Source</option>
+            </select>
+        </label>
+        <label>
+            What would you like to see improved? (Check all that apply)
+            <label><input type="checkbox">Front-end Projects</label>
+            <label><input type="checkbox">Back-end Projects</label>
+            <label><input type="checkbox">Data Visualization</label>
+            <label><input type="checkbox">Challenges</label>
+            <label><input type="checkbox">Open Source Community</label>
+            <label><input type="checkbox">Gitter help rooms</label>
+            <label><input type="checkbox">Videos</label>
+            <label><input type="checkbox">City Meetups</label>
+            <label><input type="checkbox">Wiki</label>
+            <label><input type="checkbox">Forum</label>
+            <label><input type="checkbox">Additional Cources</label>
+        </label>
+    </fieldset>
+    <fieldset>
+        <label>Any comments or suggestions?
+            <textarea placeholder="Enter your comment here"></textarea>
+        </label>    
+    </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

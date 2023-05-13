@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Build a Registration Form</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <p>Please fill this form with required information</p>
+    <form method="post" action = "https://register-demo.freecodecamp.org">
+    <fieldset>
+        <label>Enter Your First Name: <input id="first-name" name="first-name" type="text" required/></label>
+        <label>Enter Your Email: <input id="email" name="email" type="email" required /></label>
+        <label>Create Password: <input id="passwod" name="password" type="password" min="8" pattern="[a-z0-9]" required /></label>
+    </fieldset>
+    <fieldset>
+        <label><input type="radio" name="account-type" class="inline"> Personal Account</label>
+        <label><input type="radio" name="account-type" class="inline"> Business Acount</label>
+        <label><input type="checkbox" class="inline" required> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and condtions</a></label>
+    </fieldset>
+    <fieldset>
+        <label for="profile-picture">Upload a profile picutre: <input name="profile-picture" type="file"></label>
+        <label for="age">Input your age (years): <input name="age" type="number" min="13" max="120"></label>
+        <label for="referrer"> How did you hear about us?
+            <select name="referrer">
+                <option value = "">(select)</option>
+                <option value = "1">News</option>
+                <option value = "2">Youtube</option>
+                <option value = "3">Facebook</option>
+                <option value = "4">Other</option>
+            </select>
+        </label>
+        <lable for="bio">Provide a bio: 
+            <textarea name="bio" id="bio" rows = "3" cols = "30" placeholder="I am a psychopath who loves coding..."></textarea>
+        </lable>
+    </fieldset>
+    <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
