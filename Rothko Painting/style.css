@@ -3,8 +3,8 @@
 
 .canvas {
     width: 500px;
-    height: 600px;
-    background-color: #4d0f00;
+    height: 550px;
+    background-color: black;
     padding: 1px;
     overflow: hidden;
     filter: blur(2px);
@@ -20,42 +20,33 @@ h1, h3 {
 }
 
 .frame{
-    border: solid 50px black;
+    border: solid 25px white;
     width: 500px;
-    padding: 50px; 
-    margin: 20px auto;
+    padding: 00px; 
+    margin: -10px auto;
 }
 
 .one {
-    width: 425px;
-    height: 150px;
-    background-color: #efb762;
+    width: 465px;
+    height: 350px;
+    background: radial-gradient(circle at 10% 20%, rgb(75, 108, 183) 0%, rgb(55, 82, 141) 90%);
+/*    background-color: #efb762;*/
     margin: 20px auto;
-    box-shadow: 0 0 3px 3px #efb762;
-    border-radius: 9px;
-    transform: rotate(-0.6deg);
+/*    box-shadow: 0 0 3px 3px #efb762;*/
+    border-radius: 20px 20px 35px 30px;
+    transform: rotate(-0.3deg);
         
 }
 .two {
     width: 475px;
-    height: 200px;
-    background-color: #8f0401;
-    margin: 0 auto 20px;
-    border-radius: 8px 10px;
+    height: 150px;
+    background: radial-gradient(circle at 30% 30%, rgb(33, 58, 116) 0%, rgb(22, 41, 92) 90%);
+    margin: 0 auto 30px;
+    border-radius: 8px 10px 20px 15px;
     transform: rotate(0.4deg);
-    box-shadow: 0 0 3px 3px #8f0401;
 }
 
-.three {
-    background-color: #b20403;
-    width: 91%;
-    height: 28%;
-    margin: auto;
-    filter: blur(2px);
-    box-shadow: 0 0 5px 5px #b20403;
-    border-radius: 30px 25px 60px 12px;
-    transform: rotate(-0.2deg);
-}
+
 .info-container {
     display: flex;
     justify-content: center;
@@ -66,5 +57,17 @@ h1, h3 {
 }
 
 #stock {
-    color: #81c995;
+    color: #188038;
+}
+
+div {
+    font-family: "Product Sans", "Product Sans Black", "Product Sans Black Italic", "Product Sans Bold", "Product Sans Bold Italic", "Product Sans Italic", "Product Sans Light", "Product Sans Light Italic", "Product Sans Medium Italic", "Product Sans Medium", "Product Sans Thin", "Product Sans"
+}
+
+a:link, a:visited{
+    color: #188038;
+}
+
+a:hover {
+    color: darkorange;
 }
