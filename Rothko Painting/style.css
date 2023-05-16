@@ -9,6 +9,11 @@
     overflow: hidden;
     filter: blur(2px);
 }
+h1, h3 {
+    text-align: center;
+    font-family: "Product Sans", "Product Sans Black", "Product Sans Black Italic", "Product Sans Bold", "Product Sans Bold Italic", "Product Sans Italic", "Product Sans Light", "Product Sans Light Italic", "Product Sans Medium Italic", "Product Sans Medium", "Product Sans Thin", "Product Sans Thin Italic";
+    margin-bottom: 0px;
+}
 
 .one, .two {
     filter: blur(1px);
@@ -51,8 +56,15 @@
     border-radius: 30px 25px 60px 12px;
     transform: rotate(-0.2deg);
 }
+.info-container {
+    display: flex;
+    justify-content: center;
+}
 
-.text {
-    text-align: center;
-    font-family: "arial"
+#price {
+    margin-right: 3px;
+}
+
+#stock {
+    color: #81c995;
 }
