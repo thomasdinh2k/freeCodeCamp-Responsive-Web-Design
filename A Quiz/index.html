@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <title>A Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="A Simple Quiz">
+</head>
+<body>
+    <header>
+        <img id="logo" alt="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg">
+        <h1>HTML/CSS Quizz</h1>
+        <nav>
+            <ul>
+                <li><a href="#student-info" accesskey="s">INFO</a></li>
+                <li><a href="#html-questions" accesskey="h">HTML</a></li>
+                <li><a href="#css-questions" accesskey="c">CSS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+            <section role= "region" aria-labelledby="student-info">
+                <h2 id="student-info">Student</h2>
+                <div class="info">
+                    <label for="name">Name: </label>
+                    <input id="name" type="text" name="name" placeholder="Enter your name..."/>
+                </div>
+                <div class="info">
+                    <label for="email">Email: </label>
+                    <input id="email" type="email" name="email" />
+                </div>
+                <div class="info">
+                    <label for="dob">D.O.B:<span class="sr-only">(Date of Birth)</span> </label>
+                    <input id="dob" name="dob" type="date" id="birth-date" />
+                </div>
+            </section>
+            <section role= "region" aria-labelledby="html-questions">
+                <h2 id="html-questions">HTML</h2>
+                <div class="question-block">
+                    <p>1:</p>
+                    <fieldset class="question" name="Question 1">
+                        <legend>Question 1:  The <strong>header</strong> tag is used to define a section that contains the main content of a web page. </legend>
+                        <ul class="answers-list">
+                            <li>
+                                <label for="q1-a1">
+                                   <input type="radio" id="q1-a1" value="True" name="q1">True</input>
+                               </label>
+                            </li>
+                            <li>
+                                 <label for="q1-a2">
+                                      <input type="radio" id="q1-a2" value="False" name="q1">False</input>
+                                 </label> 
+                           </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <div class="question-block">
+                    <p>2: </p>
+                    <fieldset class="question">
+                        <legend>Question 2: The <strong>article</strong> tag is used to define a self-contained piece of content that can be distributed independently from the rest of the page.</legend>
+                          <ul class="answers-list">
+                            <li>
+                             <label for="q2-a1">
+                                   <input type="radio" id="q2-a1" value="True" name="q2">True</input>
+                               </label>
+                              </li>
+                            <li>
+                               <label for="q2-a2">
+                                   <input type="radio" id="q2-a2" value="False" name="q2">False</input>
+                               </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+            </section>
+            <section role= "region" aria-labelledby="css-questions">
+                <h2 id="css-questions">CSS</h2>
+                  <div class="form-row">
+                     <div class="question-block">
+                        <label for="q1">Question 1
+                     </div>
+                     <div class="answer">
+                        <select id="q1" name="selection1" required>
+                           <option value="">Please choose an option...</option>
+                           <option value="yes">Yes</option>
+                           <option value="no">No</option>
+                        </select>
+                        </label>
+                     </div>
+                     <div class="question-block">
+                        <label>Do you have any questions?   
+                     </div>
+                     <div class="answer">
+                        <textarea cols="21" rows="5" placeholder="Who is flexbox?"></textarea>
+                        </label>
+                     </div>
+                  </div>
+            </section>
+         <button type="submit">Send</button>
+        </form>
+    </main>
+<footer>
+   <address>
+      <a href="https://freecodecamp.org">freecodecamp</a><br />
+      Thomasdinh<br />
+      Hanoi <br />
+      Vietnam <br />
+   </address>
+</footer>
+</body>
+</html>
